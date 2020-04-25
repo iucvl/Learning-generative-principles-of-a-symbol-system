@@ -15,7 +15,8 @@ import matplotlib.cm as cm
 import skimage.transform
 import argparse
 
-from scipy.misc import imread, imresize
+from imageio import imread
+from skimage.transform import resize
 from nltk.metrics.distance import edit_distance
 from models import Encoder, DecoderWithAttention
 from PIL import Image
